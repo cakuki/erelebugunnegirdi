@@ -28,6 +28,9 @@ function hashDateToNum2(date) {
   const todaysLoss = dateDiffInDays(DAY_OF_JOB_OFFER_REJECTION, now) * 133;
   setElmText("salary-loss-daily-amount", formatTL(todaysLoss));
 
-  setElmText("vision-acquire-daily-amount", hashDateToNum2(now).toFixed(2));
-  setElmText("cheap-pastry-eaten-daily-amount", hashDateToNum(now));
+  setElmText(
+    "vision-acquire-daily-amount",
+    `${hashDateToNum2(now).toFixed(2)} miligram`
+  );
+  setElmText("cheap-pastry-eaten-daily-amount", `${hashDateToNum(now)} adet`);
 })();
