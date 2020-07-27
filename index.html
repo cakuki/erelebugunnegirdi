@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Erel'e bugün ne girdi?</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Erel'e bugün ne girdi?</h1>
+            <p class="lead">Günlük vizyonsuzluk istatistikleri</p>
+            <hr class="my-4">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">İşi reddettiğinden beri giren</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Günlük bazda</h6>
+                    <p class="card-text">
+                        <span id="salary-loss-daily-amount">0.00 ₺</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bugün edinilen vizyon</h5>
+
+                    <p class="card-text">
+                        <span id="vision-acquire-daily-amount">0</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tüketilen poğaça</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sade</h6>
+                    <p class="card-text">
+                        <span id="cheap-pastry-eaten-daily-amount">0</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
