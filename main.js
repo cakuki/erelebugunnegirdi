@@ -23,9 +23,18 @@ function hashDateToNum2(date) {
   return 1 / Math.abs(date.getDate() / date.getMonth());
 }
 
+function setBackgroundYikikMan() {
+  document.body.background = `./img/yikik-${Math.floor(
+    Math.random() * 4
+  )}.jpeg`;
+}
+
 (function main() {
   const now = new Date();
   const todaysLoss = dateDiffInDays(DAY_OF_JOB_OFFER_REJECTION, now) * 133;
+
+  setBackgroundYikikMan();
+
   setElmText("salary-loss-daily-amount", formatTL(todaysLoss));
 
   setElmText(
